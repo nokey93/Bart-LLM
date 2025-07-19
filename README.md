@@ -10,8 +10,7 @@ Dieses Repository demonstriert, wie ein Textzusammenfassungsmodell auf Basis der
 ```
 - Python 3.8 oder neuer
 - [PyTorch](https://pytorch.org/)
-- [Transformers](https://huggingface.co/docs/transformers/index)
-- [Datasets](https://huggingface.co/docs/datasets/index)
+- [Datasets](https://huggingface.co/datasets/abisee/cnn_dailymail)
 - Jupyter Notebook
 ```
 
