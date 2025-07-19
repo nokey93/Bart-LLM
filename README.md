@@ -1,14 +1,19 @@
 # Entwicklung eines BART-basierten Textzusammenfassungsmodells unter Verwendung CNN/DailyMail-Datasets
 
 
-Dieses Projekt zielt darauf ab, ein fortgeschrittenes Modell für die Textzusammenfassung zu entwickeln, welches auf dem Transformer-basierten BART (Bidirectional and Auto-Regressive Transformers) Modell von Facebook aufbaut. Die Wahl fiel auf BART, da es in der Lage ist, Texte nicht nur effizient zu verarbeiten, sondern auch in kohärente, zusammenhängende Zusammenfassungen umzuwandeln, die den Kern und die Nuancen der Ursprungstexte bewahren. Um die Effektivität und Anwendbarkeit des Modells zu demonstrieren, wird dieses Projekt spezifische Datasets von CNN/DailyMail verwenden. Diese Datasets bieten eine reiche Quelle an journalistischen Texten, die sich ideal für das Training und die Evaluierung von Textzusammenfassungsmodellen eignen.
+Dieses Repository demonstriert, wie ein Textzusammenfassungsmodell auf Basis der BART-Architektur von Facebook trainiert werden kann. Als Trainings- und Evaluationsgrundlage dient das CNN/DailyMail-Dataset. Der Workflow ist im Jupyter Notebook `Text_Zusammenfassung.ipynb` dokumentiert und umfasst Datenvorbereitung, Fine-Tuning sowie die Generierung von Zusammenfassungen.
 
 # Clone Modell von HuggingFace
 
-```
-# Load model directly
-from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+## Voraussetzungen
 
-tokenizer = AutoTokenizer.from_pretrained("nokey93/bart_finetuned_cnn")
-model = AutoModelForSeq2SeqLM.from_pretrained("nokey93/bart_finetuned_cnn")
 ```
+- Python 3.8 oder neuer
+- [PyTorch](https://pytorch.org/)
+- [Transformers](https://huggingface.co/docs/transformers/index)
+- [Datasets](https://huggingface.co/docs/datasets/index)
+- Jupyter Notebook
+```
+
+## Notebook ausführen
+Das Notebook `Text_Zusammenfassung.ipynb` führt Schritt für Schritt durch den Trainingsprozess. Es lädt das CNN/DailyMail-Dataset, bereitet die Texte vor und passt ein vortrainiertes BART-Modell an. Anschließend können eigene Texte zusammengefasst werden.
