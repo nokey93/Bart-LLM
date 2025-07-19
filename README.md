@@ -10,6 +10,7 @@ Dieses Repository demonstriert, wie ein Textzusammenfassungsmodell auf Basis der
 ```
 - Python 3.8 oder neuer
 - [PyTorch](https://pytorch.org/)
+- [Model] (https://huggingface.co/facebook/bart-large-xsum)
 - [Datasets](https://huggingface.co/datasets/abisee/cnn_dailymail)
 - Jupyter Notebook
 ```
